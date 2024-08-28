@@ -154,9 +154,6 @@ Figura 8.
 *Nunca se tiene Vout=Vcc aunque se hagan muchas sumas parciales 
 >🔑 Desventaja: Hay relación de resistencias que afectan la tolerancia de las mismas. Además de ello a veces hay que poner FILTROS para no observar saltos de tensión (escalones), pero limita la Freq máxima que se puede obtener.
 
-# 📚'Ejercicios'
-2. 
-
 ## 4. Modelo matemático conversores A/D y D/A
 * Utilizan mismos componentes. Muestreador y retenedor.
 * El muestreador se analiza idealmente con una señal de reloj e interruptor.
