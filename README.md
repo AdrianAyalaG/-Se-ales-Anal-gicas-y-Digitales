@@ -20,7 +20,7 @@ Características:
 
 ![Figura 1](IMG/Fig_1.jpeg)
 
-Figura 1. Estructura para control digital. Tomada de: 
+Figura 1. Estructura para control digital. Tomada de: https://aulas.ecci.edu.co/course/view.php?id=9304
 
 ## 2. Conversión Análoga a Digital
 ### 2.1 Procedimiento
@@ -29,36 +29,34 @@ Figura 1. Estructura para control digital. Tomada de:
 * Entre más alta la tasa de muestreo, más información se está procesando.
 * El muestreo puede ser periódico (único), de tasa múltiple o aleatorio.
   
-  ![Figura de prueba](images/plantilla/Captura2.PNG)
+![Figura 2](IMG/Fig_2.jpeg)
 
-Figura 2. 
+Figura 2. Muestreo en una señal analoga. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=9304
 
 #### 2.1.2 Cuantización: Se convierte en una serie de valores que corresponden a cada una de las medidas tomadas en el muestreo 
 * Los conversores vienen con una información que indica si tiene error de cuantización.
   
-![Figura de prueba](images/plantilla/Captura2.PNG)
+![Figura 3](IMG/Fig_3.jpeg)
 
-Figura 3. 
+Figura 3. Cuantización de una señal analoga. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=9304
+
 
 #### 2.1.3 Codificación: Se asignan valores de tipo binario a cada uno de los valores del paso anterior (cuantización).
 * Es importante la cantidad de bits que usará el código, es decir, los que se le van a configurar desde el inicio. Esto con el fin de que no haya desperdicio de memoria si se usan más bits de los necesarios.
 * Tienen limitaciones de voltaje.
 
-![Figura de prueba](images/plantilla/Captura2.PNG)
+![Figura 4](IMG/Fig_4.jpeg)
 
-Figura 4. 
+Figura 4. Codificación en una señal analoga. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=9304
 
 ## 2.2 Consideraciones Prácticas
 >🔑 Importante: En algunas señales hay que tener en cuenta los tiempos de retraso entre el muestreo y la cuantización del valor.
 
-![Figura de prueba](images/plantilla/Captura2.PNG)
-
-Figura 5. 
-
 ## 2.3 Tiempos de muestreador y retenedor
-![Figura de prueba](images/plantilla/Captura2.PNG)
 
-Figura 6. 
+![Figura 5](IMG/Fig_5.jpeg)
+
+Figura 5. Señal del tiempo del muestrador. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=9304
 
 * Ta: Es el tiempo de adquisición, es decir, el tiempo que pasa desde que se inicia el muestreo hasta que se retiene dentro de cierto margen de tolerancia.
 * Tp: Es el tiempo de apertura, lo que quiere decir que es el tiempo que pasa desde la retención hasta que se abre el muestreador.
@@ -108,9 +106,9 @@ Tabla 2. Explicación del fondo de escala.
 ### 3.1 Métodos de conversión
 #### 3.1.1 Resistencias Ponderadas: Está compuesto por una serie de resistencias ponderadas al peso binario de cada bit y en serie con un interruptor conectado al bit de dicho peso. $$S_{0}$$ a $$S_{N-1}$$ conectan cada resistencia a 2 posibles tensiones. 1. Son iguales, pero signo contrario: Saldrá una tensión simétrica. 2. Si una es positiva y la otra está conecta a tierra permitirá únicamente rangos positivos de señal de salida. 
 
-![Figura de prueba](images/plantilla/Captura2.PNG)
+![Figura 6](IMG/Fig_6.jpeg)
 
-Figura 7. 
+Figura 6. Método de resistencias ponderadas. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=9304
 
 MSB= BIT más significativo.
 LSB= BIT menos significativo. 
@@ -147,9 +145,9 @@ $$V_{0}= \frac{-0*-1}{2^{8-1}}= 0V$$
 
 #### 3.1.2 Red en escalera R-2R (Complicado de configurar pero es más exacto)
 
-![Figura de prueba](images/plantilla/Captura2.PNG)
+![Figura 7](IMG/Fig_7.jpeg)
 
-Figura 8. 
+Figura 7. Modelo R2R. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=9304
 
 *Nunca se tiene Vout=Vcc aunque se hagan muchas sumas parciales 
 >🔑 Desventaja: Hay relación de resistencias que afectan la tolerancia de las mismas. Además de ello a veces hay que poner FILTROS para no observar saltos de tensión (escalones), pero limita la Freq máxima que se puede obtener.
@@ -166,9 +164,16 @@ Figura 8.
 3. Las salidas son constantes sobre el periodo de muestreo.
    Se obtiene entonces:
 ### 5.1 Zero Order Hold (ZOH)
-![Figura de prueba](images/plantilla/Captura2.PNG)
 
-Figura 9.
+![Figura 8](IMG/Fig_8.jpeg)
+
+Figura 8. Función de Transferenica Zero Order Hold. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=9304
+
+![Figura 9](IMG/Fig_9.jpeg)
+
+Figura 9. Muestra Zero Order Hold y First Order Hold. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=9304
+
+
 
 * Subir la retención, implica un incremento en el costo del conversor.
 ### 5.2 First Order Hold (FOH)
