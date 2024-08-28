@@ -165,11 +165,11 @@ Figura 7. Modelo R2R. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=93
    Se obtiene entonces:
 ### 5.1 Zero Order Hold (ZOH)
 
-![Figura 8](IMG/Fig_8.jpeg)
+![Figura 8](IMG/Fig_9.jpeg)
 
 Figura 8. Función de Transferenica Zero Order Hold. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=9304
 
-![Figura 9](IMG/Fig_9.jpeg)
+![Figura 9](IMG/Fig_10.jpeg)
 
 Figura 9. Muestra Zero Order Hold y First Order Hold. Tomado de: https://aulas.ecci.edu.co/course/view.php?id=9304
 
