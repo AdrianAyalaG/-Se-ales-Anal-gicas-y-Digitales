@@ -18,9 +18,9 @@ Características:
 * Velocidad (Tiempo real. más baja que la análoga). 📉 
 * Costos (Más barata).
 
-![Figura de prueba](images/plantilla/Captura2.PNG)
+![Figura 1](IMG/Fig_1.jpeg)
 
-Figura 1. Estructura para control digital.
+Figura 1. Estructura para control digital. Tomada de: 
 
 ## 2. Conversión Análoga a Digital
 ### 2.1 Procedimiento
